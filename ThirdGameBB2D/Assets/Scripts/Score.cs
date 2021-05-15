@@ -8,13 +8,29 @@ public class Score : MonoBehaviour
     public Text score;
     int scorePoints;
 
+
+
+
+    public void Start()
+    {
+        
+    }
+   
+
     public void ScoreUp()
     {
         scorePoints += 10;
     }
+    public void ScoreUpOverMonster()
+    {
+        scorePoints += 20;
+    }
     // Update is called once per frame
     public void Update()
     {
-        score.text = "Score: " + scorePoints.ToString();
+        score.text = scorePoints.ToString("0");
+      
     }
 }
+   
+

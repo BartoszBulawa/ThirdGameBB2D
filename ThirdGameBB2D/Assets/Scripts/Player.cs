@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class Player : MonoBehaviour
 {
     [SerializeField]
@@ -11,14 +14,14 @@ public class Player : MonoBehaviour
 
     private float movementX;
 
-    private Rigidbody2D myBody;
+    public static Rigidbody2D myBody;
 
     private SpriteRenderer sr;
 
     private Animator anim;
 
     private string WALK_ANIMATION = "Walk";
-    //new
+
     private string JUMP_ANIMATION = "Jump";
 
     private bool isGrounded = true;
@@ -27,25 +30,31 @@ public class Player : MonoBehaviour
 
     private string enemyTag = "Enemy";
 
+    
+
+
     private void Awake()
     {
+        
         myBody = GetComponent<Rigidbody2D>();
+        
         anim = GetComponent<Animator>();
 
         sr = GetComponent<SpriteRenderer>();
+
     }
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
         PlayerJump();
+        PlayerHugeJump();
+
     }
     
     private void FixedUpdate()
@@ -90,7 +99,6 @@ public class Player : MonoBehaviour
     }
     void PlayerJump()
     {
-        //the if statement below is neutral for the platform so the Jump is going to be executed by default button on the platorfm u are using, for  example in PC it would be space button but in console x button
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isGrounded = false;
@@ -99,30 +107,44 @@ public class Player : MonoBehaviour
 
         }
     }
+    void PlayerHugeJump()
+    {
+        
+        if (HugeJump.HugeJumpColleced > 0 && Input.GetButtonDown("wKey") && isGrounded)
+        {
+            isGrounded = false;
+            HugeJump.DoHugeJump();
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(groundTAG))
         {
             isGrounded = true;
         }
-        if (collision.gameObject.CompareTag(enemyTag))
+        if ((collision.gameObject.CompareTag(enemyTag)))
         {
+            HugeJump.HugeJumpColleced = 0;
             Destroy(gameObject);
         }
+ 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(enemyTag))
+        {
+            HugeJump.HugeJumpColleced = 0;
             Destroy(gameObject);
+            
+        }
 
-        if (collision.CompareTag("Bounus"))
+        if (collision.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
+            FindObjectOfType<Score>().ScoreUp();
         }
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
+   
+   
 }

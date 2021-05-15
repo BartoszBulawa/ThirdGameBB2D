@@ -156,3 +156,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveForce: 10
   jumpForce: 11
+  CoinCollected: {fileID: 0}

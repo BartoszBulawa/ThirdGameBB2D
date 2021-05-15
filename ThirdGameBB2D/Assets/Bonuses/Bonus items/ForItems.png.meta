@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 2f5ae6a4e305beb489677e19d4f8ec63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1757168063971477599
+    second: Player 1-1
+  - first:
+      213: 7255854300219104043
+    second: Player 1-2
+  - first:
+      213: -6127215198058392024
+    second: Player 1-3
+  - first:
+      213: 5770437819054901188
+    second: Player 1-4
+  - first:
+      213: -4906125199742805290
+    second: Player 1-5
+  - first:
+      213: 6490518340326617606
+    second: Player 1-6
+  - first:
+      213: 4873397878994576889
+    second: Player 1-7
+  - first:
+      213: 4552264578813294707
+    second: Player 1-8
+  - first:
+      213: -8732285999409787101
+    second: Player 2-1
+  - first:
+      213: 7116009729732391868
+    second: Player 2-2
+  - first:
+      213: -3762027003936843820
+    second: Player 2-3
+  - first:
+      213: -3733097830291599174
+    second: Player 2-4
+  - first:
+      213: 4037833166851039263
+    second: Player 2-5
+  - first:
+      213: 68067404465400748
+    second: Player 2-6
+  - first:
+      213: 5489095558992561210
+    second: Player 2-7
+  - first:
+      213: 8716251932417823705
+    second: Player 2-8
+  - first:
+      213: 7751145557488692540
+    second: ForItems_0
+  - first:
+      213: 846884785188817884
+    second: ForItems_1
+  - first:
+      213: 2366806993349274648
+    second: ForItems_2
+  - first:
+      213: 8497573030815497367
+    second: ForItems_3
+  - first:
+      213: -4984715298531652052
+    second: ForItems_4
+  - first:
+      213: -8425921089824251541
+    second: ForItems_5
+  - first:
+      213: -3750866973191795256
+    second: ForItems_6
+  - first:
+      213: -7518804024223549360
+    second: ForItems_7
+  - first:
+      213: -1371830353492576219
+    second: ForItems_8
+  - first:
+      213: 1714980329038298807
+    second: ForItems_9
+  - first:
+      213: 3168554917263482883
+    second: ForItems_10
+  - first:
+      213: 6081179750001994879
+    second: ForItems_11
+  - first:
+      213: -7488312856337948901
+    second: ForItems_12
+  - first:
+      213: 8569561718478852195
+    second: ForItems_13
+  - first:
+      213: 3612283612557519146
+    second: ForItems_14
+  - first:
+      213: -1464144639518263209
+    second: ForItems_15
+  - first:
+      213: -7182413448370076106
+    second: ForItems_16
+  - first:
+      213: 3343142456970305369
+    second: ForItems_17
+  - first:
+      213: 6501790040698059574
+    second: ForItems_18
+  - first:
+      213: 8976571594902317722
+    second: ForItems_19
+  - first:
+      213: -9015646237432270227
+    second: ForItems_20
+  - first:
+      213: 2762162278929366416
+    second: ForItems_21
+  - first:
+      213: -1233128083876271427
+    second: ForItems_22
+  - first:
+      213: 6013835286217650982
+    second: ForItems_23
+  - first:
+      213: -5899550982570700951
+    second: ForItems_24
+  - first:
+      213: 7670223167238946024
+    second: ForItems_25
+  - first:
+      213: -3670469498174802107
+    second: ForItems_26
+  - first:
+      213: 1698833391570409728
+    second: ForItems_27
+  - first:
+      213: -3418474363701388124
+    second: ForItems_28
+  - first:
+      213: 5426417066974374437
+    second: ForItems_29
+  - first:
+      213: -5331768317470761026
+    second: ForItems_30
+  - first:
+      213: 1418650083092883437
+    second: ForItems_31
+  - first:
+      213: -495572619013387202
+    second: ForItems_32
+  - first:
+      213: -1496987932324700697
+    second: ForItems_33
+  - first:
+      213: -5497595158230166736
+    second: ForItems_34
+  - first:
+      213: 6823087339899526375
+    second: ForItems_35
+  - first:
+      213: -2218028392048842499
+    second: ForItems_36
+  - first:
+      213: 3976953836272267605
+    second: ForItems_37
+  - first:
+      213: -3501838647073027149
+    second: JumpBonus
+  - first:
+      213: -4462647637769144945
+    second: ForItems_39
+  - first:
+      213: -5348472388841773263
+    second: ForItems_40
+  - first:
+      213: -6761770895875689224
+    second: ForItems_41
+  - first:
+      213: -6565338138763922171
+    second: ForItems_42
+  - first:
+      213: 6656833513672759613
+    second: ForItems_43
+  - first:
+      213: -7347321414697393727
+    second: ForItems_44
+  - first:
+      213: -2199154536643430987
+    second: ForItems_45
+  - first:
+      213: -6907907244507920209
+    second: ForItems_46
+  - first:
+      213: 2418925337636369287
+    second: ForItems_47
+  - first:
+      213: -3425839157243000403
+    second: ForItems_48
+  - first:
+      213: 1168238191753677850
+    second: ForItems_49
+  - first:
+      213: -1510555707548140956
+    second: ForItems_50
+  - first:
+      213: 2376532801576166689
+    second: ForItems_51
+  - first:
+      213: -4307053829267281592
+    second: ForItems_52
+  - first:
+      213: 4717746139881247841
+    second: ForItems_53
+  - first:
+      213: 8080914377320282044
+    second: ForItems_54
+  - first:
+      213: -8239446302529626229
+    second: ForItems_55
+  - first:
+      213: 7653809859451195295
+    second: ForItems_56
+  - first:
+      213: -7151166449416714570
+    second: ForItems_57
+  - first:
+      213: -1338326177920551702
+    second: ForItems_58
+  - first:
+      213: 8429193329420500211
+    second: ForItems_59
+  - first:
+      213: 2019444931236852065
+    second: ForItems_60
+  - first:
+      213: 1857845879723621983
+    second: ForItems_61
+  - first:
+      213: 6896813955289281790
+    second: ForItems_62
+  - first:
+      213: -5952579030473641277
+    second: ForItems_63
+  - first:
+      213: -353307484540235847
+    second: ForItems_64
+  - first:
+      213: -350252878712880013
+    second: ForItems_65
+  - first:
+      213: -6861850471486805326
+    second: ForItems_66
+  - first:
+      213: 7431165246380438757
+    second: ForItems_67
+  - first:
+      213: 5144294091322655241
+    second: ForItems_68
+  - first:
+      213: -205238014792681367
+    second: ForItems_69
+  - first:
+      213: -2595016545770143132
+    second: ForItems_70
+  - first:
+      213: -3328405251502573890
+    second: ForItems_71
+  - first:
+      213: -2141140625803773600
+    second: ForItems_72
+  - first:
+      213: 7812769789302125454
+    second: ForItems_73
+  - first:
+      213: -2610127043074189651
+    second: ForItems_74
+  - first:
+      213: 6218848823219347904
+    second: ForItems_75
+  - first:
+      213: 81979317899279403
+    second: ForItems_76
+  - first:
+      213: -7652623136810066920
+    second: ForItems_77
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpBonus
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 254
+        width: 95
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb4a74dd48f66fc0800000000000000
+      internalID: -3501838647073027149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

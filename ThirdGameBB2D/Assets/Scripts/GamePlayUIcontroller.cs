@@ -9,7 +9,8 @@ public class GamePlayUIcontroller : MonoBehaviour
     {
         //I can use this one below as well
         //SceneManager.LoadScene("Gameplay");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        HugeJump.HugeJumpColleced = 0;
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void HomeButton()
     {
