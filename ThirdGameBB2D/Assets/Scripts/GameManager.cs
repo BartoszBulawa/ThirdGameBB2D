@@ -42,8 +42,5 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(characters[CharIndex]);
         }
-        
-
     }
-
-}//class 
+}

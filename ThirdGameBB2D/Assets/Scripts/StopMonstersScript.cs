@@ -5,9 +5,8 @@ using UnityEngine;
 public class StopMonstersScript : MonoBehaviour
 {
     public static int StopMonsterBonusColleced = 0;
-
-
     public int StopMonstersDuration;
+    public static bool Player_is_stopping_Monsters = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,20 +21,18 @@ public class StopMonstersScript : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(StopMonstersDuration);
-            StopMonstersDuration = 2;
-            if (Player.Player_is_stopping_Monsters)
+           StopMonstersDuration = 2;
+            if (Player_is_stopping_Monsters)
             {
-                yield return new WaitForSeconds(StopMonstersDuration);
-                Player.Player_is_stopping_Monsters = false;
                 StopMonsterBonusColleced--;
+                yield return new WaitForSeconds(StopMonstersDuration);
+                Player_is_stopping_Monsters = false;
             }
         }
-          
     }
   
     private void Start()
     {
-        
       StartCoroutine(MonstersStop());
     }
 }

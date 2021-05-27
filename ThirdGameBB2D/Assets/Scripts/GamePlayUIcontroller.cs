@@ -20,6 +20,6 @@ public class GamePlayUIcontroller : MonoBehaviour
         HugeJump.HugeJumpColleced = 0;
         StopMonstersScript.StopMonsterBonusColleced = 0;
         SkeletonHandScrpit.SkeletonHandBonus_Collected = 0;
-        Bonus.times_left_to_bonus = 5;
+        Bonus.times_left_to_bonus = 4;
     }
 }

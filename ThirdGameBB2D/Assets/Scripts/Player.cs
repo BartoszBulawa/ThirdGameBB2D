@@ -26,17 +26,14 @@ public class Player : MonoBehaviour
 
     private string JUMP_ANIMATION = "Jump";
 
-    private bool isGrounded = true;
+    private bool isGrounded = false;
 
     private string groundTAG = "Ground";
 
     private string enemyTag = "Enemy";
-    [HideInInspector]
-    public static bool Player_is_stopping_Monsters = false;
  
     [HideInInspector]
     public static bool SkeletonHand_is_executing = false;
-
 
 
     private void Awake()
@@ -49,10 +46,6 @@ public class Player : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
 
     }
-    void Start()
-    {
-        
-    }
 
     void Update()
     {
@@ -62,22 +55,8 @@ public class Player : MonoBehaviour
         PlayerHugeJump();
         IsPlayerStoppingMonster();
         SkeletonHand();
-        //check_r_button();
-
     }
-    
-    private void FixedUpdate()
-    {
-        
-    }
-    void PlayerMoveKeyboard()
-    {
-        movementX = Input.GetAxisRaw("Horizontal");
 
-        transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
-
-
-    }
     void AnimatePlayer()
     {
         if (movementX > 0)
@@ -103,8 +82,13 @@ public class Player : MonoBehaviour
             anim.SetBool(JUMP_ANIMATION, false);
         }
 
+    }
 
+    void PlayerMoveKeyboard()
+    {
+        movementX = Input.GetAxisRaw("Horizontal");
 
+        transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
     }
     void PlayerJump()
     {
@@ -112,8 +96,6 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            
-
         }
     }
     void PlayerHugeJump()
@@ -129,28 +111,17 @@ public class Player : MonoBehaviour
     {
         if(StopMonstersScript.StopMonsterBonusColleced>0 && Input.GetButtonDown("sKey"))
         {
-            Player_is_stopping_Monsters = true;
+            StopMonstersScript.Player_is_stopping_Monsters = true;
         }
     }
     void SkeletonHand()
     {
         if (SkeletonHandScrpit.SkeletonHandBonus_Collected>0 && Input.GetButtonDown("rKey") && SkeletonHand_is_executing==false)
         {
-            //Debug.Log("SkeletonHandInUse");
             SkeletonHand_is_executing = true;
-            //SkeletonHandScrpit.update_hand_initiator=1;
-
-
-
         }
     }
-    //void check_r_button()
-    //{
-    //    if (Input.GetButtonDown("rKey"))
-    //    {
-    //        Debug.Log("R Pressed");
-    //    }
-    //}
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(groundTAG))
@@ -162,7 +133,6 @@ public class Player : MonoBehaviour
             HugeJump.HugeJumpColleced = 0;
             Destroy(gameObject);
         }
- 
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -175,10 +145,7 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
-            FindObjectOfType<Score>().ScoreUp();
+            FindObjectOfType<Score>().Reward_for_collected_coin();
         }
-
     }
-   
-   
 }

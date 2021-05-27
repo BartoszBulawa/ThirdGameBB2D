@@ -10,18 +10,17 @@ public class Bonus : MonoBehaviour
 
     void Start()
     {
-        bonus.text = times_left_to_bonus.ToString("0");
+        bonus.text = times_left_to_bonus.ToString("");
     }
 
     void monsterSkiped()
     {
         times_left_to_bonus--;
-        FindObjectOfType<Score>().ScoreUpOverMonster();
+        FindObjectOfType<Score>().Reward_for_skiped_monster();
         MonsterSkipTrig1. MonsterSkipFirstTrigger = false;
         MonsterSkipTrig2. MonsterSkipSecondTrigger = false;
     }
     
-
     void Update()
     {
         
@@ -29,7 +28,7 @@ public class Bonus : MonoBehaviour
         {
             monsterSkiped();
         }
-        bonus.text = times_left_to_bonus.ToString("0");
+        bonus.text = times_left_to_bonus.ToString("");
     }
     
 }

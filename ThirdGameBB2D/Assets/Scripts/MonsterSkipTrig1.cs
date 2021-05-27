@@ -10,9 +10,9 @@ public class MonsterSkipTrig1 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            MonsterSkipFirstTrigger=true;
+            MonsterSkipFirstTrigger = true;
         }
     }
 
-    }
+}
 

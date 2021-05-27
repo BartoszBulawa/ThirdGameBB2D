@@ -15,7 +15,6 @@ public class SkeletonHand_Spawner_Script : MonoBehaviour
     private int randomSpawnPos;
 
    
-
     public static bool SkeletonHand_Bonus_Item_Has_Been_Collected = false;
     private void Update()
     {
@@ -31,6 +30,5 @@ public class SkeletonHand_Spawner_Script : MonoBehaviour
             randomSpawnPos = Random.Range(0, SpawnedHandPos.Length);
             Spawned_SkeletonHand = Instantiate(SkeletonHand);
             Spawned_SkeletonHand.transform.position = SpawnedHandPos[randomSpawnPos].position;
-       
     }
 }

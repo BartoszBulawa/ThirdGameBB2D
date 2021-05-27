@@ -15,7 +15,6 @@ public class MonsterSpawner : MonoBehaviour
     private int randomIndex;
     private int randomSide;
     
-
     void Start()
     {
         StartCoroutine (SpawnMonsters());
@@ -56,11 +55,5 @@ public class MonsterSpawner : MonoBehaviour
                 spawnedMonster.transform.localScale = new Vector3(-1f, 1f, 1f);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

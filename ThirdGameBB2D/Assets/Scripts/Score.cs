@@ -8,12 +8,11 @@ public class Score : MonoBehaviour
     public Text score;
     int scorePoints;
 
-
-    public void ScoreUp()
+    public void Reward_for_collected_coin()
     {
         scorePoints += 10;
     }
-    public void ScoreUpOverMonster()
+    public void Reward_for_skiped_monster()
     {
         scorePoints += 20;
     }

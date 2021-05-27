@@ -14,7 +14,6 @@ public class HugeJump : MonoBehaviour
         {
             HugeJumpColleced ++;
             Destroy(gameObject);
-            
         }
     }
     public static void DoHugeJump()
@@ -24,16 +23,4 @@ public class HugeJump : MonoBehaviour
     }
 
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 }
