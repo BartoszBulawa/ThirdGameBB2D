@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Bonus : MonoBehaviour
 {
     public Text bonus;
-    public static int times_left_to_bonus = 5;
+    public static int times_left_to_bonus = 4;
 
     void Start()
     {
@@ -24,11 +24,7 @@ public class Bonus : MonoBehaviour
 
     void Update()
     {
-        if (times_left_to_bonus == 0)
-        {
-
-            times_left_to_bonus = 5;
-        }
+        
         if (MonsterSkipTrig1.MonsterSkipFirstTrigger == true && MonsterSkipTrig2.MonsterSkipSecondTrigger == true)
         {
             monsterSkiped();

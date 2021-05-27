@@ -7,13 +7,19 @@ public class GamePlayUIcontroller : MonoBehaviour
 {
     public void RestartGame()
     {
-        //I can use this one below as well
-        //SceneManager.LoadScene("Gameplay");
-        HugeJump.HugeJumpColleced = 0;
+    reset_all_bonuses();
     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void HomeButton()
     {
+        reset_all_bonuses();
         SceneManager.LoadScene("MainMenu");
+    }
+    private void reset_all_bonuses()
+    {
+        HugeJump.HugeJumpColleced = 0;
+        StopMonstersScript.StopMonsterBonusColleced = 0;
+        SkeletonHandScrpit.SkeletonHandBonus_Collected = 0;
+        Bonus.times_left_to_bonus = 5;
     }
 }

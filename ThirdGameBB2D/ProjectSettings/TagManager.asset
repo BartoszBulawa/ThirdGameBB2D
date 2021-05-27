@@ -9,6 +9,10 @@ TagManager:
   - Coin
   - Bounus
   - HugeJumpIcon
+  - SkeletonHandTopTrigger
+  - SkeletonHand
+  - SkeletonHandFinishPosition
+  - BasePosForMainHand
   layers:
   - Default
   - TransparentFX

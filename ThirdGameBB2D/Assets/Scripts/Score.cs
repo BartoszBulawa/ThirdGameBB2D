@@ -9,14 +9,6 @@ public class Score : MonoBehaviour
     int scorePoints;
 
 
-
-
-    public void Start()
-    {
-        
-    }
-   
-
     public void ScoreUp()
     {
         scorePoints += 10;
@@ -25,11 +17,14 @@ public class Score : MonoBehaviour
     {
         scorePoints += 20;
     }
-    // Update is called once per frame
+    public void Reward_for_destroyed_monser()
+    {
+        scorePoints += 100;
+    }
+
     public void Update()
     {
         score.text = scorePoints.ToString("0");
-      
     }
 }
    

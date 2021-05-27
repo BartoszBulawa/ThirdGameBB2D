@@ -6,26 +6,24 @@ public class IconControllerScript : MonoBehaviour
 
 {
     public GameObject HugeJumpIcon;
+    public GameObject StopTheMonsterIcon;
+    public GameObject SkeletonHand_Icon;
     
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (HugeJump.HugeJumpColleced>0)
-        {
             HugeJumpIcon.SetActive(true);
-        }
         else 
-        {
             HugeJumpIcon.SetActive(false);
-        }
 
-
+        if (StopMonstersScript.StopMonsterBonusColleced > 0)
+            StopTheMonsterIcon.SetActive(true);
+        else
+            StopTheMonsterIcon.SetActive(false);
+        if (SkeletonHandScrpit.SkeletonHandBonus_Collected > 0)
+            SkeletonHand_Icon.SetActive(true);
+        else
+            SkeletonHand_Icon.SetActive(false);
     }
 }

@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
 
     public static Rigidbody2D myBody;
 
+    public static Transform PlayerTransform;
+
     private SpriteRenderer sr;
 
     private Animator anim;
@@ -29,8 +31,12 @@ public class Player : MonoBehaviour
     private string groundTAG = "Ground";
 
     private string enemyTag = "Enemy";
+    [HideInInspector]
+    public static bool Player_is_stopping_Monsters = false;
+ 
+    [HideInInspector]
+    public static bool SkeletonHand_is_executing = false;
 
-    
 
 
     private void Awake()
@@ -54,6 +60,9 @@ public class Player : MonoBehaviour
         AnimatePlayer();
         PlayerJump();
         PlayerHugeJump();
+        IsPlayerStoppingMonster();
+        SkeletonHand();
+        //check_r_button();
 
     }
     
@@ -116,6 +125,32 @@ public class Player : MonoBehaviour
             HugeJump.DoHugeJump();
         }
     }
+    void IsPlayerStoppingMonster()
+    {
+        if(StopMonstersScript.StopMonsterBonusColleced>0 && Input.GetButtonDown("sKey"))
+        {
+            Player_is_stopping_Monsters = true;
+        }
+    }
+    void SkeletonHand()
+    {
+        if (SkeletonHandScrpit.SkeletonHandBonus_Collected>0 && Input.GetButtonDown("rKey") && SkeletonHand_is_executing==false)
+        {
+            //Debug.Log("SkeletonHandInUse");
+            SkeletonHand_is_executing = true;
+            //SkeletonHandScrpit.update_hand_initiator=1;
+
+
+
+        }
+    }
+    //void check_r_button()
+    //{
+    //    if (Input.GetButtonDown("rKey"))
+    //    {
+    //        Debug.Log("R Pressed");
+    //    }
+    //}
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(groundTAG))
@@ -135,7 +170,6 @@ public class Player : MonoBehaviour
         {
             HugeJump.HugeJumpColleced = 0;
             Destroy(gameObject);
-            
         }
 
         if (collision.CompareTag("Coin"))

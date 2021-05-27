@@ -7,24 +7,40 @@ public class Monster : MonoBehaviour
 
     [HideInInspector]
     public float speed;
-
-
     private Rigidbody2D myBody;
+    private string Monster_is_moving = "MonsterIsMoving";
+    private Animator anim;
 
-  
+
+
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("SkeletonHand"))
+    //    {
+    //        FindObjectOfType<Score>().Reward_for_destroyed_monser();
+    //        Destroy(gameObject);
+    //    }
+    //}
+
+
     void Awake()
     {
-        //if
-        //myBody = GetComponent<Rigidbody2D>();
-
+        myBody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
-    void FixedUpdate()
+    void FixedUpdate() 
     {
-        myBody.velocity = new Vector2(speed, myBody.velocity.y);
-    }
-    public void FrozenMonster()
-    {
-        myBody.velocity = new Vector2(0, myBody.velocity.y);
+        if (Player.Player_is_stopping_Monsters)
+        {
+            myBody.velocity = new Vector2(0, myBody.velocity.y);
+            anim.SetBool(Monster_is_moving, false);
+        }
+       
+        else
+        {
+            myBody.velocity = new Vector2(speed, myBody.velocity.y);
+            anim.SetBool(Monster_is_moving, true);
+        }
     }
 }
