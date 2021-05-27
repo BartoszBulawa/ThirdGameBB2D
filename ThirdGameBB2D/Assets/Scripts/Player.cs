@@ -109,9 +109,10 @@ public class Player : MonoBehaviour
     }
     void IsPlayerStoppingMonster()
     {
-        if(StopMonstersScript.StopMonsterBonusColleced>0 && Input.GetButtonDown("sKey"))
+        if(StopMonstersScript.StopMonsterBonusColleced>0 && Input.GetButtonDown("sKey") && (StopMonstersScript.Player_is_stopping_Monsters == false))
         {
             StopMonstersScript.Player_is_stopping_Monsters = true;
+            StopMonstersScript.StopMonsterBonusColleced--;
         }
     }
     void SkeletonHand()

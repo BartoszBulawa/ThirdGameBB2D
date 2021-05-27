@@ -24,7 +24,7 @@ public class StopMonstersScript : MonoBehaviour
            StopMonstersDuration = 2;
             if (Player_is_stopping_Monsters)
             {
-                StopMonsterBonusColleced--;
+
                 yield return new WaitForSeconds(StopMonstersDuration);
                 Player_is_stopping_Monsters = false;
             }
